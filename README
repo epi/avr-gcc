@@ -1,0 +1,16 @@
+This makefile script downloads, patches, builds and installs all prerequisites required
+by the GNU toolchain for AVR, as well as the toolchain itself.
+
+To test if all builds correctly:
+$ make -j4
+
+To build and install:
+$ make clean
+# make -j4 LIBPREFIX= GCCPREFIX=/opt/avr-gcc-4.5.1
+
+In case of problems, see instructions in:
+http://www.nongnu.org/avr-libc/user-manual/install_tools.html
+
+Patches come from:
+http://distribute.atmel.no/tools/opensource/avr-gcc/
+
